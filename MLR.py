@@ -121,40 +121,6 @@ plt.show()
 
 
 
-############################################ Younes 
-
-sns.boxplot(dataset.target)
-
-
-
-#----------------------------------------------
-dataset.corrwith(dataset['target']).plot.bar(figsize = (20,10), grid = True, title = 'Correlation with ETA')
-
-
-
-
-
-
-#----------------------------------------------
-sns.distplot(dataset.target.transform(np.sqrt))
-
-sns.distplot(final_result.target)
-
-
-
-#----------------------------------------------
-plt.figure(figsize = (15 , 8))
-sns.scatterplot(x = 'target' , y = 'total_time' , data = train)
-
-#---------------------------------------------- 
-sns.boxplot(train.target)
-
-
-
-#---------------------------------------------- 
-
-
-dataset.STATUS.value_counts().plot(kind = 'bar')
 
 
 
